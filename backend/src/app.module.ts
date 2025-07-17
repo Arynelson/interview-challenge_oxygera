@@ -1,18 +1,25 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { SampleModule } from './sample/sample.module';
+import { Patient } from './patient/patient.entity';
+import { Medication } from './medication/medication.entity';
+import { Assignment } from '../src/assignment/assignment.entity';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
+import { PatientModule } from './patient/patient.module';
+import { MedicationModule } from './medication/medication.module';
+import { AssignmentModule } from './assignment/assignment.module';
 
 @Module({
   imports: [
     TypeOrmModule.forRoot({
       type: 'sqlite',
       database: 'database.sqlite',
-      entities: [__dirname + '/**/*.entity{.ts,.js}'],
+      entities: [Patient, Medication, Assignment],
       synchronize: true,
     }),
-    SampleModule,
+    PatientModule,
+    MedicationModule,
+    AssignmentModule,
   ],
   controllers: [AppController],
   providers: [AppService],
