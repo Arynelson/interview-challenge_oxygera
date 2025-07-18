@@ -13,7 +13,7 @@ export default function NuovoPaziente() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setErrore("");
-    console.log("Enviando para:", `${API_BASE_URL}/api/patients`, {
+    console.log("Sending for:", `${API_BASE_URL}/api/patients`, {
       name: nome,
       dateOfBirth: dataNascita,
     });
@@ -28,7 +28,7 @@ export default function NuovoPaziente() {
         }),
       });
 
-      // Captura detalhes do erro do backend
+      
       if (!res.ok) {
         const errorData = await res.json();
         const errorMessage =

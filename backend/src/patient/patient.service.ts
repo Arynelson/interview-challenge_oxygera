@@ -8,6 +8,9 @@ import { Assignment } from '../assignment/assignment.entity';
 
 @Injectable()
 export class PatientService {
+  getAssignmentsWithRemainingDays(arg0: number) {
+      throw new Error('Method not implemented.');
+  }
   constructor(
     @InjectRepository(Patient)
     private patientRepository: Repository<Patient>,

@@ -4,7 +4,7 @@ import { Repository } from 'typeorm';
 import { Medication } from './medication.entity';
 import { CreateMedicationDto } from './dto/create-medication.dto';
 import { UpdateMedicationDto } from './dto/update-medication.dto';
-import { Assignment } from 'src/assignment/assignment.entity';
+import { Assignment } from '../assignment/assignment.entity';
 
 @Injectable()
 export class MedicationService {

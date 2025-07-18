@@ -121,7 +121,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Cabeçalho fixo */}
+      
       <div className="sticky top-0 z-10 bg-white shadow-md py-4">
         <div className="container mx-auto px-4">
           <h1 className="text-3xl font-bold text-gray-900 text-center mb-4">
@@ -169,7 +169,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Conteúdo principal */}
+      
       <div className="container mx-auto px-4 py-8 pt-20">
         {patients.length === 0 ? (
           <div className="text-center py-12">
@@ -264,7 +264,7 @@ export default function Home() {
         )}
       </div>
 
-      {/* Modal de Medicamentos */}
+      
       {showMedications && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
           <div className="bg-white rounded-lg shadow-lg p-6 w-full max-w-2xl max-h-[80vh] overflow-y-auto">
@@ -308,7 +308,7 @@ export default function Home() {
   );
 }
 
-// Ícones
+
 const PlusIcon = ({ className }: { className?: string }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"

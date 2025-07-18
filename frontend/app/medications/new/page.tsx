@@ -22,7 +22,7 @@ export default function NuovoFarmaco() {
         frequency: Number(frequenza),
       });
 
-      router.push("/"); // ou /medications se existir
+      router.push("/"); 
     }  catch (err: unknown) {
       if (err instanceof Error) {
         setErrore(err.message);

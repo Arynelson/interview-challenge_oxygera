@@ -24,7 +24,7 @@ export default function NuovaAssegnazione() {
         numberOfDays: Number(days),
       });
 
-      router.push("/"); // ou /medications se existir
+      router.push("/"); 
     }  catch (err: unknown) {
       if (err instanceof Error) {
         setErrore(err.message);
