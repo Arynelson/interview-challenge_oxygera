@@ -80,44 +80,47 @@ Un'applicazione full-stack per la gestione di pazienti, farmaci e trattamenti, c
 
 Coprono la logica del calcolo dei giorni rimanenti e i servizi principali (`AssignmentService`, `PatientService`, `MedicationService`).
 
-bash
+```
 npm run test
-
+```
 ### ✅Test End-to-End (E2E)
 
 Validano il comportamento degli endpoint REST: creazione, validazione input, struttura JSON, codici HTTP corretti.
 
-bash
+```
 npm run test:e2e
-
+```
 ### Come Eseguire
 
 - Backend
-  bash
+  ```
   cd backend
   npm install
   npm run start:dev
-
+  ```
 - Frontend
-  bash
+  ```
   cd frontend
   npm install
   npm run dev
-
+  ```
 - Test
-  bash
+  ```
+  # Test unitari
+  npm run test
 
-# Test unitari
-
-npm run test
-
-# Test end-to-end
-
-npm run test:e2e
-
+  # Test end-to-end
+  npm run test:e2e
+  ```
+  
 ### 🏁 Conclusione
 
 Sistema completo, testato e funzionale, con architettura modulare, codice pulito e validazioni robuste.
-✔️ Progetto conforme ai requisiti
+
+✔️ Progetto conforme ai requisiti : Il FrontEnd è stato progettato in modo semplice per soddisfare le 
+       funzionalità richieste senza utilizzare tutti gli endpoint creati nel BackEnd.
+     
 ✔️ Interfaccia utente efficace
+
 ✔️ Copertura di test estesa (unità + E2E)
+
